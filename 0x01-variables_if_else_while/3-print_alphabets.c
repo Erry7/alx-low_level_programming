@@ -2,16 +2,27 @@
 /**
  * main - entry point
  *
- * Description: Print the lowercase alphabet
- * Return: 0
- */
+ *Return: Always 0 (Sucess/correct)
+*/
 int main(void)
-{
-int c;
 
-for (c = 0; c < 26; ++c)
-putchar('a' + c);
+{
+char lower_case;
+char upper_case;
+
+for upper_case = 'a'; upper_case <= 'Z'; upper_case++)
+{
+putchar(upper_case);
+}
+
+for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+{
+putchar(lower_case);
+}
 
 putchar('\n');
 
 return (0);
+
+}
+
